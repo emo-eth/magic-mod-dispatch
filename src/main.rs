@@ -52,10 +52,7 @@ fn main() {
                 println!("Found magic modulo: {}", mod_start);
                 println!("Selector indices given magic modulo: {:?}", altered);
                 break;
-            } else {
-                // println!("lens: {} {}", unique.len(), altered.len());
-            }
-            if mod_start == mod_end {
+            } else if mod_start == mod_end {
                 break;
             }
             mod_start += 1;
